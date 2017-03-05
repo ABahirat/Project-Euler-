@@ -1,6 +1,8 @@
 #include <iostream>
 using namespace std;
 
+//What is the 10001st prime number?
+
 bool isPrime(int number){
 	for(int i = 2; i < number; i++){
 		if(number % i == 0){
@@ -15,7 +17,7 @@ int main(){
 	int i = 0;
 	while(finalPrime <= 10001){
 		i++;
-		if(isPrime(i)==true){
+		if(isPrime(i)){
 			finalPrime++;
 		}
 		
